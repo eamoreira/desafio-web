@@ -1,6 +1,7 @@
 package pageObjects;
 
 import elementMapper.HomePageElementMapper;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import utils.Browser;
 
@@ -30,5 +31,9 @@ public class HomePage extends HomePageElementMapper {
         clickSearch_query_top();
         sendKeysSearch_query_top(quest);
         clickSubmit_search();
+    }
+
+    public void clickCategoriaTShirts() {
+        menuTShirt.click();
     }
 }

@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import pageObjects.CategoryPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.SearchPage;
@@ -77,5 +78,20 @@ public class SetupTest extends BaseTests{
         assertTrue(search.isSearchPage());
         assertEquals(search.getTextLighter(), quest);
         assertThat(search.getTextHeading_counter(), CoreMatchers.containsString(qestResultQtd));
+    }
+
+    @Test
+    public void testAcessCategoryTShirts() {
+        //Iniciar as paginas
+
+        HomePage home = new HomePage();
+
+        CategoryPage category = new CategoryPage();
+
+        //Clicar na categoria TShirt
+        home.clickCategoriaTShirts();
+
+        //valida se ao clicar na categoria T_SHIRTS ocorre o direcionamento correto
+        assertTrue(category.isPageTShirts());
     }
 }

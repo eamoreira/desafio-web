@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="324e5f43-af99-4e92-a738-00b6feee2956" name="Changes" comment="" />
+    <list default="true" id="324e5f43-af99-4e92-a738-00b6feee2956" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/elementMapper/CategoryPageElementMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/CategoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elementMapper/HomePageElementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elementMapper/HomePageElementMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SetupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SetupTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +53,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="elementMapper" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Edivania\cwi\desafio-web\src\test" />
     </key>
@@ -55,7 +67,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SetupTest.testSearch">
+  <component name="RunManager" selected="JUnit.SetupTest.testAcessCategoryTShirts">
     <configuration name="SetupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-web" />
       <extension name="coverage">
@@ -67,6 +79,22 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.SetupTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SetupTest.testAcessCategoryTShirts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SetupTest" />
+      <option name="METHOD_NAME" value="testAcessCategoryTShirts" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,29 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="setupTest.testOpeningBrowserAndLoadingPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="desafio-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.setupTest" />
-      <option name="METHOD_NAME" value="testOpeningBrowserAndLoadingPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SetupTest.testAcessCategoryTShirts" />
         <item itemvalue="JUnit.SetupTest.testSearch" />
         <item itemvalue="JUnit.SetupTest" />
         <item itemvalue="JUnit.setupTest" />
         <item itemvalue="JUnit.setupTest.testLogin" />
-        <item itemvalue="JUnit.setupTest.testOpeningBrowserAndLoadingPage" />
       </list>
     </recent_temporary>
   </component>
@@ -174,11 +186,6 @@
           <properties class="java.net.ConnectException" package="java.net" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/SetupTest.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
