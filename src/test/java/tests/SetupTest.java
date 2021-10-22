@@ -5,10 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import pageObjects.CategoryPage;
-import pageObjects.HomePage;
-import pageObjects.LoginPage;
-import pageObjects.SearchPage;
+import pageObjects.*;
 import utils.Browser;
 import utils.Utils;
 
@@ -93,5 +90,47 @@ public class SetupTest extends BaseTests{
 
         //valida se ao clicar na categoria T_SHIRTS ocorre o direcionamento correto
         assertTrue(category.isPageTShirts());
+    }
+
+    @Test
+    public void testAddProductToProductPage(){
+        //Acessar a categoria T-shirts
+        testAcessCategoryTShirts();
+
+        //Iniciar as páginas
+        CategoryPage category = new CategoryPage();
+        ProductPage product = new ProductPage();
+
+        //Salva nome do produto na pagina de categoria
+        String nameProductCategory = category.getProductNameCategory();
+
+        //Clicar em More e direcionar para a pagina do produto
+        category.clickProductAddToProductPage();
+
+        //Verificar se produto estah na pagina de detalhes do produto corretamente
+        assertTrue(product.getProductNamePDP().equals(nameProductCategory));
+    }
+
+    @Test
+    public void testAddProductToCartPage() {
+        // Acessar a pagina de produto
+        testAddProductToProductPage();
+
+        //Iniciar a pagina
+        ProductPage product = new ProductPage();
+        CartPage cart = new CartPage();
+
+        //Salvar o nome do produto na pagina PDP
+        String nameProductPDP = product.getProductNamePDP();
+
+        //Clicar no botao de Adicionar ao carrinho
+        product.clickButtonAddToCart();
+
+
+        //Clicar no botao proceed da checkout
+        product.clickButtonModalProceedToCheckout();
+
+        assertTrue(cart.getNameProductCart().equals(nameProductPDP));
+
     }
 }
